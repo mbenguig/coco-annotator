@@ -52,6 +52,6 @@ services:
       - MONGO_LOG_DIR=/dev/null
     volumes:
       - "mongodb_data:/data/db"
-    command: "mongod --smallfiles --logpath=/dev/null"
+    command: "mongod --logpath=/dev/null"
     networks:
       - cocoannotator
